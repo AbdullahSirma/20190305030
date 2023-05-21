@@ -14,8 +14,7 @@ public class NewEmployee extends JFrame{
     private JComboBox cmbDepartments;
     private JButton btnSave;
     private JPanel pnlNewEmployee;
-    private String connectionUrl = "jdbc:sqlserver://MYCOMP\\SQLEXPRESS:1433;" +
-            "databaseName=20190305030;user=sql_user;password=123;trustServerCertificate=true";
+    String connectionUrl = "jdbc:sqlserver://DESKTOP-5CONCDT\\MSSQLSERVER01;databaseName=20190305030;user=sql_user;password=123;trustServerCertificate=true";
     public NewEmployee(){
         add(pnlNewEmployee);
         setSize(500,400);

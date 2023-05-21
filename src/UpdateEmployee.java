@@ -15,8 +15,7 @@ public class UpdateEmployee extends JFrame {
     private JButton btnUpdate;
     private JPanel pnlUpdateEmployee;
 
-    private String connectionUrl = "jdbc:sqlserver://MYCOMP\\SQLEXPRESS:1433;" +
-            "databaseName=20190305030;user=sql_user;password=123;trustServerCertificate=true";
+    String connectionUrl = "jdbc:sqlserver://DESKTOP-5CONCDT\\MSSQLSERVER01;databaseName=20190305030;user=sql_user;password=123;trustServerCertificate=true";
     public UpdateEmployee(Employee employee){
         add(pnlUpdateEmployee);
         setSize(550,300);

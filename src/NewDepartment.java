@@ -16,7 +16,7 @@ public class NewDepartment extends JFrame{
         btnSave.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String connectionUrl = "jdbc:sqlserver://MYCOMP\\SQLEXPRESS:1433;databaseName=20190305030;user=sql_user;password=123;trustServerCertificate=true";
+                String connectionUrl = "jdbc:sqlserver://DESKTOP-5CONCDT\\MSSQLSERVER01;databaseName=20190305030;user=sql_user;password=123;trustServerCertificate=true";
                 String SQL = "INSERT INTO Departments VALUES(?,?)";
                 try (Connection con = DriverManager.getConnection(connectionUrl);
                      PreparedStatement stmt = con.prepareStatement(SQL);) {

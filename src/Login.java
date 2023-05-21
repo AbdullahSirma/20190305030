@@ -18,7 +18,7 @@ public class Login extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                String connectionUrl = "jdbc:sqlserver://DESKTOP-5CONCDT\\MSSQLSERVER01:1433;databaseName=20190305030;user=sql_user;password=123;trustServerCertificate=true";
+                String connectionUrl = "jdbc:sqlserver://DESKTOP-5CONCDT\\MSSQLSERVER01;databaseName=20190305030;user=sql_user;password=123;trustServerCertificate=true";
                 String SQL = "SELECT COUNT(*) FROM Users WHERE Email = ? and Password = ? ";
                 try (Connection con = DriverManager.getConnection(connectionUrl);
                      PreparedStatement  stmt = con.prepareStatement(SQL);) {

@@ -13,8 +13,7 @@ public class DepartmentList extends JFrame {
     private JPanel pnlDepartmentList;
     private JButton btnUpdateDepartment;
     private JButton btnDeleteDepartment;
-    private String connectionUrl = "jdbc:sqlserver://MYCOMP\\SQLEXPRESS:1433;" +
-            "databaseName=20190305030;user=sql_user;password=123;trustServerCertificate=true";
+    private String connectionUrl = "jdbc:sqlserver://DESKTOP-5CONCDT\\MSSQLSERVER01;databaseName=20190305030;user=sql_user;password=123;trustServerCertificate=true";
 
     private DefaultTableModel model;
 

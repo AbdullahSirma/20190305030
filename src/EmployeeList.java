@@ -14,8 +14,7 @@ public class EmployeeList extends JFrame{
     private JScrollPane scrollPane1;
     private JButton btnUpdateEmployee;
     private JButton btnDeleteEmployee;
-    private String connectionUrl = "jdbc:sqlserver://MYCOMP\\SQLEXPRESS:1433;" +
-            "databaseName=20190305030;user=sql_user;password=123;trustServerCertificate=true";
+    private String connectionUrl = "jdbc:sqlserver://DESKTOP-5CONCDT\\MSSQLSERVER01;databaseName=20190305030;user=sql_user;password=123;trustServerCertificate=true";
 
     private DefaultTableModel model;
     public EmployeeList(){
